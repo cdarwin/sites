@@ -1,0 +1,63 @@
+masterSite=doc.sistineskin.com
+siteTitle='Documentation'
+siteSubTitle=''
+conf_enable_wiki
+
+sites_menu=()
+conf_wiki_editors_groups=admin
+
+fn nav_sites {
+        for(m in $sites_menu) {
+                ifs=(':') { co=`{echo -n $m} }
+                if(~ 'http://'^$co(2) $base_url)
+                        echo '<li class="thisPage"><a href="http://'^$co(2)^'">'^$co(1)^'</a></li>'
+                                if not 
+                                        echo '<li><a href="http://'^$co(2)^'">'^$co(1)^'</a></li>'
+        }   
+}
+
+fn nav_tree {
+    if(! ~ $#sideBarNavTitle 0)
+        echo '<p class="sideBarTitle">'$"sideBarNavTitle':</p>'
+    style_color1='#dddddd'
+    style_color2='#eeeeee'
+    style_color=''
+    for(reqp in $req_paths_list) {
+        if(~ $style_color $style_color2)
+            style_color=$style_color1
+        if not 
+            style_color=$style_color2
+        ls -F $sitedir/./$reqp >[2]/dev/null \
+            | { 
+                sed $dirfilter'/\/[^_.\/][^\/]*(\.(md|txt|html)|\/)$/!d; s!^'$sitedir'!!; '$dirclean
+            } | sort -u | awk -F/ '
+        function p(x, y, s) { for(i=0; i < x-y; i+=1) print s } 
+        BEGIN { lNF=2; printed=0; style_color=ENVIRON["style_color"]; }
+        {   
+            d = ""
+            if(match($0, "/$"))
+                d = "/" 
+            sub("/$", "") # Strip trailing / for dirs so NF is consistent
+
+            lNF = NF
+
+            bname = $NF d
+            path = $0 d
+            gsub(/[\-_]/, " ", bname)
+
+            # To avoid false matches add trailing / even for plain files to act as delimiter
+            pa = path
+            gsub(/[^\/]$/, "&/", pa) 
+
+            if(printed == 0) {
+                print "<div id=\"menu\" style=\"background-color: "style_color";\"><ul>";
+                printed++;
+            }   
+            if(index(ENVIRON["req_path"] "/", pa) == 1)
+                print "<li class=\"thisPage\"><a href=\"" path "\">" bname "</a></li>"
+            else
+                print "<li><a href=\"" path "\">" bname "</a></li>"
+        }   
+        END { if(printed > 0) print "</ul></div>" }'
+    }   
+}

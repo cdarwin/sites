@@ -1,0 +1,123 @@
+body {
+	background-color: #eee;
+	color: #333;
+	font-family: Cantarell, Helvetica, Verdana, Arial, 'Liberation Sans', FreeSans, sans-serif;
+	text-align: justify;
+	padding: 1em;
+	margin: 0 auto 0 auto;
+	max-width: 50em;
+}
+
+a {
+	color: #36c;
+	text-decoration: none;
+} 
+
+a:hover {
+	color: #666;
+}
+
+#header {
+	clear: both;
+	color: #666;
+	text-shadow: 1px 1px #fff;
+	font-size: 1.7em;
+	padding: 0.7ex;
+}
+
+#header a {
+	color: #666;
+}
+
+h1 {
+	margin: 1em 1ex 0.5ex 0;
+	font-size: 1.4em;
+}
+
+h2 {
+	margin: 1em 1ex 0.5ex 0;
+	font-size: 1.3em;
+}
+
+h3 {
+	margin: 1em 1ex 0.5ex 0;
+	font-size: 1.2em;
+}
+
+h4 {
+	margin: 1em 1ex 0.5ex 0;
+	font-size: 1.1em;
+}
+
+#content {
+	padding: 0;
+	margin: 1ex 0 0 0;
+	border: 1px solid #ccc;
+	/*
+	-moz-box-shadow: 0 0 0.7ex #999;
+	-webkit-box-shadow: 0 0 0.7ex #999;
+	box-shadow: 0 0 0.7ex #999;
+	*/
+}
+
+#nav {
+	background-color: #ddd;
+	float: right;
+	margin: 0 0 2em 2em;
+	padding: 0;
+}
+
+#nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+#nav li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+#nav li a {
+	color: #36c;
+	display: block;
+	margin: 0;
+	padding: 0.8ex 2em 0.8ex 1em;
+}
+
+#nav li a:hover {
+	background: #eee;
+}
+
+#nav li a.current {
+	background-color: #fff;
+	color: #333;
+	/*
+	-moz-box-shadow: 0.4ex 0.2ex 0.4ex #999;
+	-webkit-box-shadow: 0.4ex 0.2ex 0.4ex #999;
+	box-shadow: 0.4ex 0.2ex 0.4ex #999;
+	*/
+}
+
+#main {
+	align: left;
+	background-color: #fff;
+	padding: 5ex;
+}
+
+#footer {
+	clear: both;
+	color: #666;
+	font-size: 84%;
+	padding: 1ex;
+	margin: 0 0 1em 0;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}

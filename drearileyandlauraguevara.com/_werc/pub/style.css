@@ -1,0 +1,17 @@
+/* # Header # */
+.midHeader {
+  background-color: #7030A0;
+  border: 0;
+}
+.headerTitle a {
+    color: #ddd;
+}
+#headerSubTitle {
+    color: pink;
+}
+#menu li.thisPage a {
+  color: black!important;
+}
+#menu ul li a, #footer, #footer a, #main-copy h1, #main-copy h2, #main-copy a {
+  color: #7030A0;
+}

@@ -1,0 +1,11 @@
+aptitude install lighttpd build-essential
+curl http://dl.suckless.org/tools/9base-6.tar.gz | tar xzf
+curl http://hg.cat-v.org/werc/archive/tip.tar.bz2 | tar xjf
+cd 9base-6
+make install clean
+mv ../werc-bec1802070f8/ /var/www/werc
+cp -r /var/www/werc/sites/default.cat-v.org /var/www/werc/sites/your.domain.com
+echo '# Hello World!' > /var/www/werc/sites/your.domain.com/index.md
+cp /etc/lighttpd/lighttpd.conf /etc/lighttpd/lighttpd.conf.ORG
+ed /etc/lighttpd/lighttpd.conf
+/etc/init.d/lighttpd force-reload

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+<int name="highlights_color" value="-1" />
+<boolean name="uiLAB" value="true" />
+<string name="swipedownActions">6</string>
+<boolean name="uiCloseDockbar" value="true" />
+<int name="desktopSpeed" value="0" />
+<boolean name="systemPersistent" value="true" />
+<boolean name="drawerNew" value="true" />
+<boolean name="uiDots" value="false" />
+<int name="highlights_color_focus" value="-1" />
+<int name="desktopRows" value="2" />
+<boolean name="drawerLabels" value="false" />
+<boolean name="uiNewSelectors" value="true" />
+<int name="uiScaleAB" value="7" />
+<boolean name="uiABBg" value="false" />
+<boolean name="uiDesktopIndicatorAutohide" value="false" />
+<boolean name="autosizeIcons" value="true" />
+<boolean name="hideStatusbar" value="false" />
+<boolean name="wallpaperHack" value="true" />
+<int name="drawerColumnsPortrait" value="4" />
+<int name="desktopBounce" value="0" />
+<boolean name="uiDockbar" value="true" />
+<boolean name="uiHideLabels" value="true" />
+<boolean name="uiCloseFolder" value="true" />
+<boolean name="desktopCache" value="true" />
+<int name="desktopColumns" value="2" />
+<boolean name="uiAB2" value="true" />
+<int name="drawerRowsPortrait" value="4" />
+<boolean name="fadeDrawerLabels" value="false" />
+<string name="homeBinding">1</string>
+<boolean name="desktopRotation" value="true" />
+<boolean name="themeIcons" value="false" />
+<boolean name="uiDesktopIndicator" value="false" />
+<string name="swipeupActions">8</string>
+<boolean name="previewsNew" value="true" />
+<boolean name="uiRAB" value="true" />
+<boolean name="drawerAnimated" value="false" />
+<boolean name="previewsFullScreen" value="true" />
+<string name="uiDesktopIndicatorType">2</string>
+<boolean name="uiAppsBg" value="false" />
+<boolean name="uiScrollableWidgets" value="false" />
+</map>

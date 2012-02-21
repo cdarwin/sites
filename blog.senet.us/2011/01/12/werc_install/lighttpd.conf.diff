@@ -1,0 +1,10 @@
+17d16
+<             "mod_cgi",
+169,175d167
+< $HTTP["host"] =~ "^your\.domain\.com$" {
+<     index-file.names = ( )
+<     server.error-handler-404 = "/werc.rc"
+<     alias.url       += ( "/werc.rc" => "/var/www/werc/bin/werc.rc" ) # Here use the path to werc.rc in your system.
+<     cgi.assign += ( ".rc" => "")
+<     server.dir-listing = "disable"
+< }
