@@ -1,5 +1,2 @@
 masterSite=senet.us
 siteTitle='Jason R Thigpen'
-#siteSubTitle='About me'
-
-sites_menu=(about:senet.us gallery:picasaweb.google.com/118285902950180656780 code:code.senet.us)
