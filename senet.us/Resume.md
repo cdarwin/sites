@@ -16,6 +16,7 @@ I have at least 10 years of experience in various areas of systems engineering a
 TAOS Mountain Inc.<br />
 San Jose, CA | 2011-present
 
+**Intuit**<br />
 Most recently I have worked as the Lead Architect and Engineer on a continuous integration project for Intuit. The project goal was to move the product development team of a rather large Windows based C++ SaaS application into a more agile development environment. I have migrated their code base from a `subversion` repository to `git` to help facility more frequent and painless merging for the Development team. I have setup `jenkins` for the QA team to facilitate continuous integration and to orchestrate multiple, concurrent builds for testing. I have implemented `puppet` for the Operations team to help facilitate configuration management and deployment automation.
 
 ## Senior Systems Engineer
